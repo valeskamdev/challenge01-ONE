@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background: #F3F5FC;
+    box-sizing: border-box;
+    margin: 20px;
+    width: 95vw;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-logo {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.text-and-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+    height: 710px;
+}
+
+.text-and-buttons textarea {
+    margin-left: 50px;
+    border: none;
+    outline: 0;
+    background: transparent;
+    border-radius: 10px;
+    width: 44rem;
+    height: 30rem;
+    color: #0A3871;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    resize: none;
+}
+
+.rectangle-initial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    max-width: 383px;
+    height: 790px;
+    padding: 20px;
+}
+
+.rectangle img {
+    background: #FFFFFF;
+    width: 100%;
+}
+
+.container-text-rectangle {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 28px;
+    padding: 8px;
+
+}
+
+.textRectangle1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+}
+
+.textRectangle2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+}
+
+.rectangle-result {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    max-width: 383px;
+    height: 790px;
+    padding: 20px;
+    padding-top: 20px;
+}
+
+.rectangle-result textarea {
+    padding-top: 35px;
+    overflow-wrap: break-word;
+    max-width: 383px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 150%;
+    color: #495057;
+    outline: 0;
+    border: 0px;
+    resize: none;
+    outline: none;
+
+    width: 383px;
+    height: 630px;
+
+}
+
+.button-rectangle {
+    margin-bottom: 20px;
+    color: #0A3871;
+    width: 328px;
+    height: 67px;
+    background: transparent;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.buttons-and-exclamation-circle {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+}
+
+.exclamation-circle {
+    display: flex;
+    align-items: center;
+}
+
+.exclamation-circle img {
+    width: 16px;
+    height: 16px;
+}
+
+.exclamation-circle textarea {
+    margin-left: 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #495057;
+    opacity: 0.8;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+.encryptButton {
+    width: 328px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    color: #FFFFFF;
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.decryptButton {
+    margin-left: 20px;
+    color: #0A3871;
+    width: 328px;
+    height: 67px;
+    background: transparent;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.encryptButton:hover {
+    background-color: #2c507d;
+}
+
+.decryptButton:hover,
+.button-rectangle:hover {
+    background-color: #D8DFE8;
+}
+
+
+@media only screen and (max-device-width: 1280px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-and-buttons {
+        display: flex;
+        align-items: center;
+    }
+
+    .buttons {
+        margin-bottom: 45px;
+    }
+
+    .buttons-and-exclamation-circle {
+        margin: 0px;
+    }
+
+    .rectangle {
+        display: flex;
+        justify-content: center;
+    }
+
+    .rectangle-initial {
+        max-width: 690px;
+        width: 690px;
+        height: 133px;
+    }
+
+    .rectangle img {
+        display: none;
+    }
+
+    .container-text-rectangle {
+        margin: 0px;
+        padding: 0px;
+    }
+
+
+    .rectangle-result {
+        display: flex;
+        max-width: 690px;
+        width: 690px;
+        height: 380px;
+    }
+
+    .rectangle-result textarea {
+        max-width: 620px;
+        width: 620px;
+        padding: 0px;
+    }
+
+    .button-rectangle {
+        margin-top: 30px;
+        color: #0A3871;
+        width: 328px;
+        height: 125px;
+        background: transparent;
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+    }
+}
+
+@media only screen and (max-device-width: 760px) {
+
+
+    .container-logo {
+        margin-bottom: 90px;
+    }
+
+    .text-and-buttons textarea {
+        max-width: 30rem;
+        margin-bottom: 35px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .decryptButton {
+        margin-top: 26px;
+        margin-left: 0px;
+    }
+
+    .rectangle-initial {
+        width: 327px;
+        height: 186px;
+    }
+
+    .rectangle-result {
+        width: 343px;
+        height: 595px;
+    }
+
+    .rectangle-result textarea {
+        overflow-wrap: break-word;
+        width: 343px;
+        height: 595px;
+    }
+
+    .button-rectangle {
+        margin-top: 30px;
+        color: #0A3871;
+        width: 328px;
+        height: 73px;
+        background: transparent;
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+    }
+
+    @media only screen and (max-device-width: 434px) {
+
+        .container-logo {
+            margin: 20px 0px 40px 0px;
+        }
+
+        .text-and-buttons textarea {
+            max-width: 23rem;
+            margin-left: 10px;
+        }
+    }
+}

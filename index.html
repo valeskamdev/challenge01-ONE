@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Decodificador</title>
+</head>
+<body>
+    <header>
+        <div class="container-logo">
+            <img src="assets/image/Frame 6.svg" alt="">
+        </div>
+    </header>
+    <main>
+        <div>
+            <div class="text-and-buttons">
+                <textarea id="text-initial" required="" placeholder="Digite seu texto.."></textarea>
+                <div class="buttons-and-exclamation-circle">
+                    <div class="exclamation-circle">
+                        <img src="assets/image/Vector.svg" alt="">
+                        <p>Apenas letras minúsculas e sem acento.</p>
+                    </div>
+                    <div class="buttons">
+                        <button class="encryptButton" id="encrypt">Criptografar</button>
+                        <button class="decryptButton" id="decrypt">Descriptografar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="rectangle">
+                <div class="rectangle-initial" id="rectangle-initial">
+                    <img src="assets/image/High quality products 1 1.svg" alt="">
+                    <div class="container-text-rectangle">
+                        <p class="textRectangle1">Nenhuma mensagem encontrada</p>
+                        <p class="textRectangle2">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    </div>
+                </div>
+    
+                <div class="rectangle-result" id="rectangle-result" style="display: none;">
+                    <textarea id="final-text"></textarea>
+                    <button class="button-rectangle" id="copy">Copiar</button>
+                </div>
+            </div>
+        </div>
+        <script src="crypter.js"></script>
+    </main>
+</body>
+
+</html>
